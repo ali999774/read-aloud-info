@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Readmellow Privacy Policy</title>
+  <style>
+    :root{color-scheme:light dark;--bg:light-dark(#fafcfb,#19201c);--ink:light-dark(#202b25,#edf3ef);--muted:light-dark(#526259,#bdcbbf);--accent:light-dark(#176b4e,#a8e1c7);--line:light-dark(#dbe4de,#435047)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,sans-serif}main{max-width:760px;margin:auto;padding:40px 24px 64px}h1{font-size:clamp(28px,6vw,38px);line-height:1.15;margin:16px 0}h2{font-size:21px;line-height:1.3;margin:32px 0 10px}p,li{overflow-wrap:anywhere}a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.muted{color:var(--muted)}.summary{padding:16px 20px;border:1px solid var(--line);border-radius:14px}nav{font-size:14px}li{margin:8px 0}code{font-size:.9em}
+  </style>
+</head>
+<body><main>
+  <nav><a href="https://ali999774.github.io/read-aloud-info/">Readmellow support</a></nav>
+  <h1>Readmellow Privacy Policy</h1>
+  <p class="muted">Effective October 23, 2026 · Applies to Readmellow — Read Webpages Aloud for Microsoft Edge, version 2.2.0.</p>
+  <div class="summary"><strong>Readmellow does not operate a server that receives your reading text.</strong> Reading uses Microsoft Edge’s speech interface. Online voices are off by default. If you enable them, your browser or operating system may send text to its speech provider.</div>
+
+  <h2>Publisher and contact</h2>
+  <p>Readmellow is maintained by <a href="https://github.com/ali999774">ali999774</a>, the publisher of this extension. For support or privacy questions, <a href="https://github.com/ali999774/read-aloud-info/issues/new">open a support request</a>. GitHub issues are public: do not include private page text, credentials, personal documents, or sensitive browsing information. You can request a private contact channel without posting the private information itself.</p>
+
+  <h2>What the extension accesses</h2>
+  <ul>
+    <li><strong>Page content and selections:</strong> when you request reading, Readmellow processes readable text and its positions in the current page to create speech, highlight sentences, follow reading, and jump to a section.</li>
+    <li><strong>Page context:</strong> the page language helps filter voices. A right-click position is remembered temporarily so “Read from here” can start near the pointer. While the player is open, your selection may be remembered temporarily so using its controls does not lose the selected text.</li>
+    <li><strong>Available voices:</strong> Readmellow asks Microsoft Edge for voice names, identifiers, languages, and whether the browser reports them as local or online.</li>
+    <li><strong>Preferences:</strong> reading speed, voice choice, highlighting, follow reading, player position, and the online-voice preference are stored in the extension’s local browser storage.</li>
+    <li><strong>Playback coordination:</strong> a browser tab identifier is kept in session storage so starting a new reading can stop the previous tab. Readmellow does not store a browsing-history list.</li>
+  </ul>
+  <p>Permission to run on ordinary websites allows the page controls and right-click reading position to work across sites. It does not cause automatic spoken playback. File access requires you to enable Microsoft Edge’s separate “Allow access to file URLs” setting.</p>
+
+  <h2>Local and online speech</h2>
+  <p><strong>Online voices are off by default.</strong> With this setting off, Readmellow selects only voices that Microsoft Edge reports as local. If none are available, it stops with an explanation instead of using an unknown or online default voice. The local/online classification is supplied by the browser; Readmellow does not independently audit your browser or operating system.</p>
+  <p>You can turn on <strong>Allow online voices</strong> in the toolbar popup. The notice beside that setting explains that the browser’s speech provider may receive the text being read, including personal information contained in that text. Provider processing may also involve network metadata, such as an IP address. The provider’s terms, retention practices, and privacy policy apply; these are not controlled by Readmellow. See your browser and operating-system settings and, where applicable, the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</p>
+  <p>You can turn the setting off at any time. Readmellow cancels active or paused online/unknown speech and uses a reported-local voice for subsequent playback, or stops if none is available. Turning it off cannot recall text already sent to a provider. Do not enable online voices for material you do not want processed by a speech provider.</p>
+
+  <h2>Storage and retention</h2>
+  <p>Reading text, selection ranges, and reading position are held in the page’s memory, not saved as an article library or uploaded to the publisher. Stop keeps the captured reading available for replay. Closing the player removes its controls; captured text can remain in that tab’s memory until a new reading replaces it or the document is reloaded, navigated away from, or closed.</p>
+  <p>Preferences remain in local extension storage until changed, cleared through browser/profile controls, or removed with the extension. The playback tab identifier is session data managed by the browser. Readmellow does not use its own cloud synchronization or an account system.</p>
+
+  <h2>What the publisher does not receive</h2>
+  <p>Readmellow contains no publisher-operated analytics, advertising, tracking pixels, account collection, or crash-report uploads. It does not sell reading text, use it for advertising, or send it to the publisher for AI training. There are no direct network-upload calls in the extension. Optional browser speech services are described above.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Start reading only the page or selection you want to hear, and stop playback at any time.</li>
+    <li>Leave online voices off to restrict playback to voices reported as local.</li>
+    <li>Use Microsoft Edge’s extension site-access controls to limit websites the extension can access. Some reading features may then be unavailable.</li>
+    <li>Reload or close an article tab to discard its in-memory reading data. Remove the extension to remove its saved local extension data.</li>
+    <li>Contact the publisher about privacy questions. The publisher has no remotely stored reading-text database to search, export, or delete. For data processed by a speech provider or GitHub, contact that service.</li>
+  </ul>
+
+  <h2>This website and support requests</h2>
+  <p>The public privacy and support pages are hosted on GitHub Pages. Visiting them or opening a support request involves GitHub, which may process technical information, your GitHub account details, and any information you submit under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. These pages add no analytics, cookies, remote fonts, or advertising scripts of their own. A bundled copy of this policy is also available from the extension’s toolbar popup.</p>
+
+  <h2>Changes</h2>
+  <p>Updates to data handling will be reflected here with a new effective date and, where appropriate, an extension notice or renewed choice. Readmellow does not claim affiliation with Microsoft or with voice providers.</p>
+</main></body>
+</html>
